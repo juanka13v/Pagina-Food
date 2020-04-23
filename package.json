@@ -1,6 +1,6 @@
 {
   "name": "cloned",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Repo for apps and webs cloned made with HTML and CSS or SASS.",
   "main": "index.js",
   "scripts": {
