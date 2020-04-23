@@ -1,5 +1,9 @@
-// Import all your scss files here
-
+// Configuración inicial
 @import 'init';
-@import 'colors';
-@import 'components/components';
+
+// Variables
+@import 'variables';
+
+// Importa todos tus archivos y componentes aquí
+@import 'components/header';
+@import 'components/footer';
