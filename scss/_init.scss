@@ -4,7 +4,9 @@ html {
   font-weight: normal;
 }
 
-body {
+* {
   margin: 0;
-  // Inicializa algunas propiedades aquí
+  padding: 0;
+  box-sizing: border-box;
+  // Inicializa algunas propiedades aquí 
 }
