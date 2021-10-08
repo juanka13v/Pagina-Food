@@ -13,12 +13,11 @@
     "url": "git+https://github.com/juanka13v/Pagina-Food"
   },
   "keywords": [
-    "clone",
     "webs",
     "html",
     "css"
   ],
-  "author": "Marcelo Velasquez",
+  "author": "Juan Carlos Valero",
   "license": "ISC",
   "homepage": "https://github.com/juanka13v/Pagina-Food#readme",
   "dependencies": {}
