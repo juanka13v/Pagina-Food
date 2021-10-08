@@ -1,0 +1,124 @@
+@import 'scss/variables'; 
+
+
+.fruit-container {
+    padding: 2rem;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    
+
+    h2 {
+        margin: 1rem 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: 2.25rem;
+        text-transform: capitalize;
+    }
+
+    p{
+        margin: 1rem 2rem;
+        color: #111111;
+        font-family: $font-text ;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    
+
+    .fruit-container__text {
+        button {
+            margin: 1rem 2rem;
+
+            &:hover {
+                background-color: $color-8;
+            }
+        }
+    }
+
+
+    .box-red {
+        width: 160px;
+        height: 148px;
+        background-color: $color-2;
+        position: absolute;
+        z-index: -100;
+        left: 3rem;
+        top: 3rem;
+    }
+
+    .box-green {
+        width: 160px;
+        height: 148px;
+        background-color: $color-1;
+        position: absolute;
+        z-index: -100;
+        right: 3rem;
+        bottom: 3rem;
+    }
+}  
+
+
+
+
+@media screen and (max-width: $breakpoint-lg) {
+
+    .fruit-container {
+        flex-wrap: wrap;
+        
+        h2 {
+            width: 100%;
+        }
+
+        p {
+            display: block;
+        }
+        .fruit-container__text {
+            width: 50%;
+            
+        }
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    
+
+    .fruit-container {
+        flex-direction: column;
+        h2 {
+            width: 100%;
+        }
+        .fruit-container__text {
+            width: 100%;
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    
+
+    .fruit-container {
+
+        h2 {
+            margin: 1rem 0;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+        .box-red {
+            left: 1rem;
+            top: 1rem;
+        }
+ 
+        .box-green {
+            right: 1rem;
+            bottom: 1rem;
+        }
+    }
+    
+}

@@ -27,28 +27,148 @@ button {
 .salads-container {
   background-color: #c3e288;
   padding: 3rem 4rem;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .salads-container .salads__info-container {
     width: 50%; }
     .salads-container .salads__info-container h2 {
       font-size: 2.25rem;
-      margin: 0 16px; }
+      margin: 2rem 16px; }
     .salads-container .salads__info-container p {
-      margin: 20px 16px 45px;
+      margin: 1rem 16px 3rem;
       font-size: 1rem;
       font-weight: 400;
       font-family: 'Open Sans',sans-serif;
       line-height: 1.6;
       color: #636d50; }
+    .salads-container .salads__info-container button {
+      margin: 0 16px; }
   .salads-container .salads__img-container {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: baseline; }
     .salads-container .salads__img-container .salad__img {
       width: 340px;
-      height: 400px; }
+      height: 400px;
+      margin: 2rem 0; }
       .salads-container .salads__img-container .salad__img img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+  .salads-container span {
+    position: absolute;
+    z-index: 999;
+    font-family: sans-serif;
+    font-size: 10rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff;
+    bottom: -20px;
+    right: 20%; }
+
+@media screen and (max-width: 1200px) {
+  .salads-container .salads__info-container {
+    margin-bottom: 5rem; }
+  .salads-container span {
+    right: 10%; } }
+
+@media screen and (max-width: 992px) {
+  .salads-container {
+    padding: 3rem 2rem; }
+    .salads-container .salads__info-container {
+      margin-bottom: 4.5rem; }
+    .salads-container span {
+      font-size: 8rem;
+      right: 10%; } }
+
+@media screen and (max-width: 768px) {
+  .salads-container {
+    flex-direction: column;
+    padding: 1rem 1rem; }
+    .salads-container .salads__info-container {
+      order: 2;
+      width: 100%;
+      margin: 0 0 3.5rem; }
+      .salads-container .salads__info-container p {
+        margin: 1rem 1rem 2rem; }
+    .salads-container .salads__img-container {
+      order: 1;
+      width: 100%; }
+      .salads-container .salads__img-container .salad__img {
+        width: 290px;
+        height: 300px;
+        margin: 0; }
+    .salads-container span {
+      font-size: 4.5rem;
+      right: 0rem;
+      bottom: -10px; } }
+
+.fruit-container {
+  padding: 2rem;
+  display: flex;
+  align-items: baseline;
+  position: relative; }
+  .fruit-container h2 {
+    margin: 1rem 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.25rem;
+    text-transform: capitalize; }
+  .fruit-container p {
+    margin: 1rem 2rem;
+    color: #111111;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6; }
+  .fruit-container .fruit-container__text button {
+    margin: 1rem 2rem; }
+    .fruit-container .fruit-container__text button:hover {
+      background-color: #94a378ce; }
+  .fruit-container .box-red {
+    width: 160px;
+    height: 148px;
+    background-color: #f2d9bb;
+    position: absolute;
+    z-index: -100;
+    left: 3rem;
+    top: 3rem; }
+  .fruit-container .box-green {
+    width: 160px;
+    height: 148px;
+    background-color: #c3e288;
+    position: absolute;
+    z-index: -100;
+    right: 3rem;
+    bottom: 3rem; }
+
+@media screen and (max-width: 992px) {
+  .fruit-container {
+    flex-wrap: wrap; }
+    .fruit-container h2 {
+      width: 100%; }
+    .fruit-container p {
+      display: block; }
+    .fruit-container .fruit-container__text {
+      width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .fruit-container {
+    flex-direction: column; }
+    .fruit-container h2 {
+      width: 100%; }
+    .fruit-container .fruit-container__text {
+      width: 100%; } }
+
+@media screen and (max-width: 576px) {
+  .fruit-container h2 {
+    margin: 1rem 0; }
+  .fruit-container p {
+    margin: 1rem 0; }
+  .fruit-container .box-red {
+    left: 1rem;
+    top: 1rem; }
+  .fruit-container .box-green {
+    right: 1rem;
+    bottom: 1rem; } }

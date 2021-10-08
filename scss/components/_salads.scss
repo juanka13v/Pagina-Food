@@ -4,22 +4,27 @@
     background-color: $color-1;
     padding: 3rem 4rem;
     display: flex;
+    position: relative;
 
     .salads__info-container {
         width: 50%;
 
         h2 {
             font-size: 2.25rem;
-            margin: 0 16px ;
+            margin: 2rem 16px ;
         }
         
         p {
-            margin: 20px 16px 45px;
+            margin: 1rem 16px 3rem;
             font-size: 1rem;
             font-weight: 400;
             font-family: 'Open Sans',sans-serif;
             line-height: 1.6;
-            color: $color-8;
+            color: $color-9;
+        }
+
+        button {
+            margin: 0 16px;
         }
     }
 
@@ -27,11 +32,12 @@
         width: 50%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
 
         .salad__img {
             width: 340px;
             height: 400px;
+            margin: 2rem 0;
             img {
                 width: 100%;
                 height: 100%;
@@ -39,4 +45,91 @@
             }  
         }
     }
+
+    span {
+        position: absolute;
+        z-index: 999;
+        font-family: sans-serif;
+        font-size: 10rem;
+        line-height: 1;
+        font-weight: 700;
+        color: $color-6;
+        bottom: -20px;
+        right: 20%;
+    }
 } 
+
+
+@media screen and (max-width: $breakpoint-xl) {
+
+    .salads-container {
+        
+        .salads__info-container {
+            margin-bottom: 5rem;
+        }
+
+        
+
+        span {
+            right: 10%;
+        }
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-lg) {
+    
+
+    .salads-container {
+        padding: 3rem 2rem;
+        .salads__info-container {
+            margin-bottom: 4.5rem;
+        }
+
+        
+        span {
+            font-size: 8rem;
+            right: 10%;
+        }
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    
+
+
+
+    .salads-container {
+        flex-direction: column;
+        padding: 1rem 1rem;
+        .salads__info-container {
+            order: 2;
+            width: 100%;
+            margin: 0 0 3.5rem;
+
+            p {
+                margin: 1rem 1rem 2rem;
+            }
+        }
+
+        .salads__img-container {
+            order: 1;
+           width: 100%;
+
+           .salad__img {
+               width: 290px;
+               height: 300px;
+               margin: 0;
+           }
+        }
+
+        span {
+            font-size: 4.5rem;
+            right: 0rem;
+            bottom: -10px;
+        }
+    }
+    
+}
+

@@ -1,5 +1,5 @@
 {
-  "name": "cloned",
+  "name": "pagina-food",
   "version": "1.0.1",
   "description": "Repo for apps and webs cloned made with HTML and CSS or SASS.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarceloVelasquez/clone.git"
+    "url": "git+https://github.com/juanka13v/Pagina-Food"
   },
   "keywords": [
     "clone",
@@ -20,9 +20,6 @@
   ],
   "author": "Marcelo Velasquez",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MarceloVelasquez/cloned/issues"
-  },
-  "homepage": "https://github.com/MarceloVelasquez/cloned#readme",
+  "homepage": "https://github.com/juanka13v/Pagina-Food#readme",
   "dependencies": {}
 }
