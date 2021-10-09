@@ -1,0 +1,103 @@
+@import 'scss/variables'; 
+
+.sushi-container {
+    background-color: $color-2;
+    padding: 3rem 4rem;
+    display: flex;
+    position: relative;
+
+    .sushi-container__img {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        .sushi__img {
+            width: 340px;
+            height: 400px;
+            margin: 2rem 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            } 
+        }
+    }
+
+    .sushi-container__info {
+        width: 55%;
+        margin-bottom: 5rem;
+        h2 {
+            font-weight: 700;
+            text-transform: capitalize;
+            line-height: 1.2;
+            font-size: 2.25rem;
+            font-family: 'Roboto', sans-serif;
+            margin: 2rem 16px ;
+        }
+        
+        p {
+            margin: 1rem 16px 3rem;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Open Sans',sans-serif;
+            line-height: 1.6;
+            color: $color-9;
+        }
+
+        button {
+            margin: 0 16px;
+            &:hover {
+                background-color: $color-2;
+            }
+        }
+
+    }
+
+    span {
+        position: absolute;
+        z-index: 999;
+        font-family: sans-serif;
+        font-size: 10rem;
+        line-height: 1;
+        font-weight: 700;
+        color: $color-6;
+        bottom: -20px;
+        right: 10%;
+    }
+}
+
+
+
+@media screen and (max-width: $breakpoint-md) {
+    
+
+    .sushi-container {
+        flex-direction: column;
+        padding: 1rem 1rem;
+        .sushi-container__img {
+            width: 100%;
+            .sushi__img {
+                margin: 0;
+                width: 290px;
+                height: 300px;
+            }
+        }
+
+        .sushi-container__info {
+            width: 100%;
+            p {
+                margin: 1rem 1rem 2rem;
+            }
+        }
+
+        span {
+            font-size: 4.5rem;
+            right: 0rem;
+            bottom: -10px;
+        }
+    }
+
+    
+    
+}
+

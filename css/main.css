@@ -32,6 +32,11 @@ button {
   .salads-container .salads__info-container {
     width: 50%; }
     .salads-container .salads__info-container h2 {
+      font-weight: 700;
+      font-family: 'Roboto', sans-serif;
+      text-transform: capitalize;
+      line-height: 1.2;
+      font-size: 2.25rem;
       font-size: 2.25rem;
       margin: 2rem 16px; }
     .salads-container .salads__info-container p {
@@ -43,6 +48,8 @@ button {
       color: #636d50; }
     .salads-container .salads__info-container button {
       margin: 0 16px; }
+      .salads-container .salads__info-container button:hover {
+        background-color: #c3e288; }
   .salads-container .salads__img-container {
     width: 50%;
     display: flex;
@@ -172,3 +179,72 @@ button {
   .fruit-container .box-green {
     right: 1rem;
     bottom: 1rem; } }
+
+.sushi-container {
+  background-color: #f2d9bb;
+  padding: 3rem 4rem;
+  display: flex;
+  position: relative; }
+  .sushi-container .sushi-container__img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline; }
+    .sushi-container .sushi-container__img .sushi__img {
+      width: 340px;
+      height: 400px;
+      margin: 2rem 0; }
+      .sushi-container .sushi-container__img .sushi__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .sushi-container .sushi-container__info {
+    width: 55%;
+    margin-bottom: 5rem; }
+    .sushi-container .sushi-container__info h2 {
+      font-weight: 700;
+      text-transform: capitalize;
+      line-height: 1.2;
+      font-size: 2.25rem;
+      font-family: 'Roboto', sans-serif;
+      margin: 2rem 16px; }
+    .sushi-container .sushi-container__info p {
+      margin: 1rem 16px 3rem;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: 'Open Sans',sans-serif;
+      line-height: 1.6;
+      color: #636d50; }
+    .sushi-container .sushi-container__info button {
+      margin: 0 16px; }
+      .sushi-container .sushi-container__info button:hover {
+        background-color: #f2d9bb; }
+  .sushi-container span {
+    position: absolute;
+    z-index: 999;
+    font-family: sans-serif;
+    font-size: 10rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff;
+    bottom: -20px;
+    right: 10%; }
+
+@media screen and (max-width: 768px) {
+  .sushi-container {
+    flex-direction: column;
+    padding: 1rem 1rem; }
+    .sushi-container .sushi-container__img {
+      width: 100%; }
+      .sushi-container .sushi-container__img .sushi__img {
+        margin: 0;
+        width: 290px;
+        height: 300px; }
+    .sushi-container .sushi-container__info {
+      width: 100%; }
+      .sushi-container .sushi-container__info p {
+        margin: 1rem 1rem 2rem; }
+    .sushi-container span {
+      font-size: 4.5rem;
+      right: 0rem;
+      bottom: -10px; } }
