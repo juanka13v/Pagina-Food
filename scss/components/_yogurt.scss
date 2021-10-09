@@ -1,0 +1,119 @@
+@import 'scss/variables'; 
+
+.yogurt-container {
+    display: flex;
+    padding: 2rem;
+    align-items: baseline;
+    position: relative;
+
+    h2 {
+        margin: 1rem 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: 2.25rem;
+        text-transform: capitalize;
+    }
+
+    p{
+        margin: 1rem 2rem;
+        color: #111111;
+        font-family: $font-text ;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    button {
+        margin: 1rem 2rem;
+        &:hover {
+            background-color: $color-10;
+        }
+    }
+
+    .box-red {
+        width: 160px;
+        height: 148px;
+        background-color: $color-2;
+        position: absolute;
+        z-index: -100;
+        right: 3rem;
+        bottom: 3rem;
+    }
+
+    .box-blue {
+        width: 160px;
+        height: 148px;
+        background-color: $color-3;
+        position: absolute;
+        z-index: -100;
+        left: 3rem;
+        top: 3rem;
+    }
+}
+ 
+
+
+@media screen and (max-width: $breakpoint-lg) {
+
+    .yogurt-container {
+        flex-wrap: wrap;
+        
+        h2 {
+            width: 100%;
+        }
+
+        p {
+            display: block;
+        }
+        .yogurt-container__text {
+            width: 50%;
+            
+        }
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    
+
+    .yogurt-container {
+        flex-direction: column;
+        h2 {
+            width: 100%;
+        }
+        .yogurt-container__text {
+            width: 100%;
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    
+
+    .yogurt-container {
+
+        h2 {
+            margin: 1rem 0;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        button {
+            margin: 1rem 0;
+        }
+        .box-red {
+            right: 1rem;
+            bottom: 1rem;
+        }
+        .box-blue {
+                left: 1rem;
+                top: 1rem;
+        }
+    }
+    
+    
+}

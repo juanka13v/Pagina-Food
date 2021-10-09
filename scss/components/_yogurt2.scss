@@ -1,12 +1,12 @@
 @import 'scss/variables'; 
 
-.salads-container {
-    background-color: $color-1;
+.yogurt2-container {
+    background-color: $color-3;
     padding: 3rem 4rem;
     display: flex;
     position: relative;
 
-    .salads__info-container {
+    .yogurt2-container__info {
         width: 50%;
 
         h2 {
@@ -30,18 +30,18 @@
         button {
             margin: 0 16px;
             &:hover {
-                background-color: $color-1;
+                background-color: $color-3;
             }
         }
     }
 
-    .salads__img-container {
+    .yogurt2-container__img {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: baseline;
 
-        .salad__img {
+        .yogurt2__img {
             width: 340px;
             height: 400px;
             margin: 2rem 0;
@@ -69,9 +69,9 @@
 
 @media screen and (max-width: $breakpoint-xl) {
 
-    .salads-container {
+    .yogurt2-container {
         
-        .salads__info-container {
+        .yogurt2-container__info {
             margin-bottom: 5rem;
         }
 
@@ -87,9 +87,9 @@
 @media screen and (max-width: $breakpoint-lg) {
     
 
-    .salads-container {
+    .yogurt2-container {
         padding: 3rem 2rem;
-        .salads__info-container {
+        .yogurt2-container__info {
             margin-bottom: 4.5rem;
         }
 
@@ -107,10 +107,10 @@
 
 
 
-    .salads-container {
+    .yogurt2-container {
         flex-direction: column;
         padding: 1rem 1rem;
-        .salads__info-container {
+        .yogurt2-container__info {
             order: 2;
             width: 100%;
             margin: 0 0 3.5rem;
@@ -120,11 +120,11 @@
             }
         }
 
-        .salads__img-container {
+        .yogurt2-container__img {
             order: 1;
            width: 100%;
 
-           .salad__img {
+           .yogurt2__img {
                width: 290px;
                height: 300px;
                margin: 0;

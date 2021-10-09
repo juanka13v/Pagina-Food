@@ -37,7 +37,6 @@ button {
       text-transform: capitalize;
       line-height: 1.2;
       font-size: 2.25rem;
-      font-size: 2.25rem;
       margin: 2rem 16px; }
     .salads-container .salads__info-container p {
       margin: 1rem 16px 3rem;
@@ -245,6 +244,163 @@ button {
       .sushi-container .sushi-container__info p {
         margin: 1rem 1rem 2rem; }
     .sushi-container span {
+      font-size: 4.5rem;
+      right: 0rem;
+      bottom: -10px; } }
+
+.yogurt-container {
+  display: flex;
+  padding: 2rem;
+  align-items: baseline;
+  position: relative; }
+  .yogurt-container h2 {
+    margin: 1rem 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.25rem;
+    text-transform: capitalize; }
+  .yogurt-container p {
+    margin: 1rem 2rem;
+    color: #111111;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6; }
+  .yogurt-container button {
+    margin: 1rem 2rem; }
+    .yogurt-container button:hover {
+      background-color: #f0c60ee1; }
+  .yogurt-container .box-red {
+    width: 160px;
+    height: 148px;
+    background-color: #f2d9bb;
+    position: absolute;
+    z-index: -100;
+    right: 3rem;
+    bottom: 3rem; }
+  .yogurt-container .box-blue {
+    width: 160px;
+    height: 148px;
+    background-color: #afe7f6;
+    position: absolute;
+    z-index: -100;
+    left: 3rem;
+    top: 3rem; }
+
+@media screen and (max-width: 992px) {
+  .yogurt-container {
+    flex-wrap: wrap; }
+    .yogurt-container h2 {
+      width: 100%; }
+    .yogurt-container p {
+      display: block; }
+    .yogurt-container .yogurt-container__text {
+      width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .yogurt-container {
+    flex-direction: column; }
+    .yogurt-container h2 {
+      width: 100%; }
+    .yogurt-container .yogurt-container__text {
+      width: 100%; } }
+
+@media screen and (max-width: 576px) {
+  .yogurt-container h2 {
+    margin: 1rem 0; }
+  .yogurt-container p {
+    margin: 1rem 0; }
+  .yogurt-container button {
+    margin: 1rem 0; }
+  .yogurt-container .box-red {
+    right: 1rem;
+    bottom: 1rem; }
+  .yogurt-container .box-blue {
+    left: 1rem;
+    top: 1rem; } }
+
+.yogurt2-container {
+  background-color: #afe7f6;
+  padding: 3rem 4rem;
+  display: flex;
+  position: relative; }
+  .yogurt2-container .yogurt2-container__info {
+    width: 50%; }
+    .yogurt2-container .yogurt2-container__info h2 {
+      font-weight: 700;
+      font-family: 'Roboto', sans-serif;
+      text-transform: capitalize;
+      line-height: 1.2;
+      font-size: 2.25rem;
+      margin: 2rem 16px; }
+    .yogurt2-container .yogurt2-container__info p {
+      margin: 1rem 16px 3rem;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: 'Open Sans',sans-serif;
+      line-height: 1.6;
+      color: #636d50; }
+    .yogurt2-container .yogurt2-container__info button {
+      margin: 0 16px; }
+      .yogurt2-container .yogurt2-container__info button:hover {
+        background-color: #afe7f6; }
+  .yogurt2-container .yogurt2-container__img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline; }
+    .yogurt2-container .yogurt2-container__img .yogurt2__img {
+      width: 340px;
+      height: 400px;
+      margin: 2rem 0; }
+      .yogurt2-container .yogurt2-container__img .yogurt2__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .yogurt2-container span {
+    position: absolute;
+    z-index: 999;
+    font-family: sans-serif;
+    font-size: 10rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff;
+    bottom: -20px;
+    right: 20%; }
+
+@media screen and (max-width: 1200px) {
+  .yogurt2-container .yogurt2-container__info {
+    margin-bottom: 5rem; }
+  .yogurt2-container span {
+    right: 10%; } }
+
+@media screen and (max-width: 992px) {
+  .yogurt2-container {
+    padding: 3rem 2rem; }
+    .yogurt2-container .yogurt2-container__info {
+      margin-bottom: 4.5rem; }
+    .yogurt2-container span {
+      font-size: 8rem;
+      right: 10%; } }
+
+@media screen and (max-width: 768px) {
+  .yogurt2-container {
+    flex-direction: column;
+    padding: 1rem 1rem; }
+    .yogurt2-container .yogurt2-container__info {
+      order: 2;
+      width: 100%;
+      margin: 0 0 3.5rem; }
+      .yogurt2-container .yogurt2-container__info p {
+        margin: 1rem 1rem 2rem; }
+    .yogurt2-container .yogurt2-container__img {
+      order: 1;
+      width: 100%; }
+      .yogurt2-container .yogurt2-container__img .yogurt2__img {
+        width: 290px;
+        height: 300px;
+        margin: 0; }
+    .yogurt2-container span {
       font-size: 4.5rem;
       right: 0rem;
       bottom: -10px; } }
